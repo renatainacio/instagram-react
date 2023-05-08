@@ -64,7 +64,7 @@ export default function Post(props) {
           <div className="curtidas">
             <img src={props.imgCurtida} alt={props.usuarioCurtida}/>
             <div className="texto">
-              Curtido por <strong data-test="likes-number">{props.usuarioCurtida}</strong> e <strong>outras {numeroLikes} pessoas</strong>
+              Curtido por <strong data-test="likes-number">{props.usuarioCurtida}</strong> e <strong>outras {numeroLikes.toLocaleString("pt-br")} pessoas</strong>
             </div>
           </div>
         </div>
