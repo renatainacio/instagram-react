@@ -5,6 +5,7 @@ export default function Post(props) {
   const [salvo, setSalvo] = useState("bookmark-outline");
   const [classes, setClasses] = useState("");
   const [numeroLikes, setNumeroLikes] = useState(props.numeroCurtidas);
+  const [classHeart, setClassHeart] = useState("hide");
   function curtir() {
     if (curtida === "heart")
     {
@@ -17,6 +18,9 @@ export default function Post(props) {
       setClasses("vermelho");
       setCurtida("heart");
       setNumeroLikes(numeroLikes + 1);
+      setClassHeart("like");
+      setTimeout(() => setClassHeart("like like-end"), 1);
+      setTimeout(() => setClassHeart("hide"), 500);
     }
   }
   function curtirFoto() {
@@ -25,6 +29,9 @@ export default function Post(props) {
       setClasses("vermelho");
       setCurtida("heart");
       setNumeroLikes(numeroLikes + 1);
+      setClassHeart("like");
+      setTimeout(() => setClassHeart("like like-end"), 1);
+      setTimeout(() => setClassHeart("hide"), 500);
     }
   }
   function salvar() {
@@ -47,6 +54,7 @@ export default function Post(props) {
 
         <div className="conteudo">
           <img src={props.imgConteudo} alt={props.altConteudo} onDoubleClick={curtirFoto} data-test="post-image"/>
+          <ion-icon name="heart" class={classHeart}></ion-icon>
         </div>
 
         <div className="fundo">

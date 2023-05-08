@@ -312,3 +312,27 @@ ion-icon {
 .preto {
   color: preto;
 }
+
+.conteudo {
+  position: relative;
+}
+
+.like {
+  position: absolute;
+  top: 286px;
+  left: 286px;
+  color: white;
+  font-size: 40px;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.like-end {
+  top: 206px;
+  left: 206px;
+  font-size: 200px;
+}
+
+.hide {
+  display: none;
+}
