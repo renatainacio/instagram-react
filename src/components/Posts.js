@@ -8,7 +8,7 @@ const items = [
         altConteudo:"gato-telefone",
         imgCurtida:"assets/img/respondeai.svg",
         usuarioCurtida: "respondeai",
-        numeroCurtidas: "101.523"
+        numeroCurtidas: 101523
     },
     {
         imgUsuario:"assets/img/barked.svg",
@@ -17,7 +17,7 @@ const items = [
         altConteudo:"dog",
         imgCurtida:"assets/img/adorable_animals.svg",
         usuarioCurtida: "adorable_animals",
-        numeroCurtidas: "99.159"
+        numeroCurtidas: 99159
     },
     {
         imgUsuario:"assets/img/adorable_animals.svg",
@@ -26,7 +26,7 @@ const items = [
         altConteudo:"gato-telefone",
         imgCurtida:"assets/img/meowed.svg",
         usuarioCurtida: "meowed",
-        numeroCurtidas: "67.926"
+        numeroCurtidas: 67926
     }
 ]
 
